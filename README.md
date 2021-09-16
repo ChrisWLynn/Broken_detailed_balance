@@ -1,10 +1,10 @@
 # Broken_detailed_balance
-Code and data for "Broken detailed balance and entropy production in the human brain" by Christopher W. Lynn, Eli J. Cornblath, Lia Papadopoulos, Maxwell A. Bertolero, and Danielle S. Bassett.
+Code for "Broken detailed balance and entropy production in the human brain" by Christopher W. Lynn, Eli J. Cornblath, Lia Papadopoulos, Maxwell A. Bertolero, and Danielle S. Bassett.
 
-Data for undirected networks are in files labelled "graphs_[graph family]_samples_undirected.mat".
+Data can be found here: https://www.dropbox.com/sh/p0tbnom0oum8f3d/AAC4eJsGGGAxLRdocq0_4gWaa?dl=0
 
-Data for directed networks are in files labelled "graphs_[graph family]_samples_directed.mat".
+The script "HCP_cluster_script.m" demonstrates how we performed the main analysis in the paper (as illustrated in Fig. 4), first using k-means clustering to identify coarse-grained neural states and then estimating entropy production. This script uses "kmeans_bisection.m" to perform the hierarchical clustering, "bootstrap_transitions.m" to perform the bootstrap sampling, and "entProd_transitions.m" to estimate the entropy production.
 
-The main scripts used to analyze the networks are "script_rate_distortion_real_samples.m" and "script_rate_distortion_real_samples_directed.m".
+In order to creat the flux maps illustrated in Fig. 1, first run "fluxMap_bootstrap.m". Then use either "plot_fluxMap_rest.m" (for the rest data) or "plot_fluxMap_gambling.m" (for the gambling data). We also include "plot_fluxDivergence.m", which illustrates the flux divergences plotted in Fig. S3 in the Supporting Information.
 
-The function used to compute the rate-distortion curve of a network is "rate_distortion_upper.m".
+For queries or issues, please contact Chris Lynn at cwlynn@princeton.edu.
