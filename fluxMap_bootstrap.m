@@ -2,10 +2,10 @@
 
 % Parameters to set:
 num_samples = 100; % Number of bootstrap samples
-order = 1; % Order of correlations preserved in bootstrap samples
-num_comps = 2; % Number of principle components:
-num_bins = 10; % Number of discrete bins to consider in each dimension:
-num_STD = 2; % Number of standard deviations from component center to cut off flux analysis:
+order = 1; % Order of correlations preserved in bootstrap samples (keep 1 for Markov transitions)
+num_comps = 2; % Number of principle components
+num_bins = 10; % Number of discrete bins to consider in each dimension
+num_STD = 2; % Number of standard deviations from component center to cut off flux analysis
 
 % Length of time step in seconds:
 dt = .72;
